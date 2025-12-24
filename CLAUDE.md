@@ -54,7 +54,7 @@ The easiest way to analyze your data:
 /do-more
 
 # OR thorough analysis (10-30 min, interactive)
-/do-all user-behavior html
+/do-all
 # → [checkpoint 1] Review data quality
 # → [checkpoint 2] Approve hypotheses
 # → [checkpoint 3] Review visualizations
@@ -86,9 +86,7 @@ The project uses 12 specialized skills for different analysis types:
 
 ### Universal Commands
 - **`/do-more`**: ⭐ **RECOMMENDED** - Automatic multi-skill analysis (no parameters, observes data_storage/)
-- **`/do-all [domain] [format]`**: Complete interactive workflow with human feedback checkpoints
-  - `domain`: user-behavior, business-impact, technical-performance, custom
-  - `format`: markdown, html, pdf, docx
+- **`/do-all`**: Complete interactive workflow with human feedback checkpoints (no parameters, uses data from data_storage/)
 - `/analyze [dataset] [analysis_type]`: General data analysis (exploratory, statistical, predictive, complete)
 - `/visualize [dataset] [chart_type]`: Create visualizations
 - `/generate [language] [analysis_type]`: Generate analysis code
@@ -224,9 +222,7 @@ pip install -r requirements.txt
 /do-more
 
 # OR: Interactive complete workflow (with human feedback)
-/do-all user-behavior html
-/do-all business-impact pdf
-/do-all technical-performance markdown
+/do-all
 
 # Direct skill invocation
 /skill [skill_name] [dataset_path]
@@ -250,14 +246,13 @@ pip install -r requirements.txt
 - ✅ Zero human intervention
 - 📁 Output: `do_more_analysis/integrated_results/Comprehensive_Analysis_Report.html`
 
-**`/do-all [domain] [format]`** - Interactive Complete Workflow:
+**`/do-all`** - Interactive Complete Workflow:
 ```bash
-/do-all user-behavior html
+/do-all
 ```
-- ⚙️ Requires domain and format parameters
+- ✅ No parameters required
 - ✅ Uses data from data_storage/
-- ✅ Executes all 12 skills
-- ✅ 3 human feedback checkpoints
+- ✅ Complete analysis workflow with 3 human feedback checkpoints
 - ✅ Generates code + reports
 - ✅ Takes 10-30 minutes
 - 📁 Output: `complete_analysis/` directory
@@ -265,8 +260,8 @@ pip install -r requirements.txt
 **Key Differences:**
 | Aspect | `/do-more` | `/do-all` |
 |--------|-----------|-----------|
-| Parameters | None | [domain] [format] |
-| Skills | Auto-selected (7+) | All skills (12) |
+| Parameters | None | None |
+| Skills | Auto-selected (7+) | Complete workflow (no skills) |
 | Checkpoints | None | 3 interactive |
 | Duration | 2-5 min | 10-30 min |
 | Code gen | No | Yes |
@@ -299,14 +294,8 @@ python .claude/hooks/validate-analysis.py < file_path
 
 ### Interactive Complete Analysis (When You Need Depth)
 ```bash
-# User behavior analysis with human oversight
-/do-all user-behavior html
-
-# Business impact analysis with PDF report
-/do-all business-impact pdf
-
-# Technical performance with markdown docs
-/do-all technical-performance markdown
+# Complete analysis with human oversight
+/do-all
 
 # Workflow (10-30 minutes with checkpoints):
 # 1. Data Quality Assessment → [you confirm]
@@ -344,7 +333,7 @@ python .claude/hooks/validate-analysis.py < file_path
 /do-more
 
 # Option 2: Interactive and thorough
-/do-all custom html
+/do-all
 
 # Option 3: Step-by-step manual
 /quality [dataset.csv] validate
@@ -386,7 +375,7 @@ The project includes Olist e-commerce datasets in `data_storage/`:
 - Multiple output formats
 
 **2. Comprehensive Coverage**
-- Executes all 12 analysis skills
+- Complete analysis workflow (no skills required)
 - Data quality assessment
 - Exploratory + statistical + predictive analysis
 - Visualizations + code generation
@@ -437,20 +426,6 @@ The project includes Olist e-commerce datasets in `data_storage/`:
 - Technical findings
 - Recommendations
 - Format: HTML, PDF, Markdown, or DOCX
-
-### Parameters Explained
-
-**`domain`** - Analysis focus area:
-- `user-behavior`: Focus on user actions, sessions, events
-- `business-impact`: Focus on revenue, LTV, growth metrics
-- `technical-performance`: Focus on system metrics, performance
-- `custom`: Your custom analysis requirements
-
-**`format`** - Output format:
-- `markdown`: Lightweight documentation
-- `html`: Interactive web reports
-- `pdf`: Professional documents
-- `docx`: Word-compatible documents
 
 ### When to Use Each Command
 
@@ -530,7 +505,7 @@ complete_analysis/
 
 **Complete Research Analysis** (10-30 minutes):
 ```bash
-/do-all user-behavior html
+/do-all
 # → [Checkpoint 1] Review data quality: 85/100, proceed?
 # → [Checkpoint 2] Hypotheses: "Mobile users have higher retention", approve?
 # → [Checkpoint 3] Visualizations: Interactive dashboard ready, good?
@@ -685,7 +660,7 @@ complete_analysis/
 
 ### General Dataset Analysis
 ```bash
-/do-all [any_dataset.csv]  # Complete automated workflow
+/do-all  # Complete automated workflow
 /data-exploration-visualization [dataset.csv]  # EDA focused
 /regression-analysis-modeling [dataset.csv]  # Predictive modeling
 ```
@@ -712,7 +687,7 @@ Each skill must contain:
 
 ### Custom Analysis Workflows
 - Skills can be combined for complex multi-stage analysis
-- The `/do-all` command orchestrates multiple skills automatically
+- The `/do-all` command provides complete analysis workflow (no skills required)
 - Hooks ensure consistent validation and context loading across all operations
 
 ### Environment Requirements

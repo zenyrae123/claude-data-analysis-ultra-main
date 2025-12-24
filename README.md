@@ -2,6 +2,8 @@
 
 A modern, intelligent data analysis platform built with Claude Code's sub-agents, slash-commands, skills, and hooks. Transform your data analysis workflow with AI-powered assistance and specialized analysis tools.
 
+简单的一句话： 2个命令， /do-all 常规数据分析 ； /do-more 互联网数据分析 。 而分析数据是放在 /data_storage 。就这么简单，用起来吧！
+
 ## 🚀 Quick Start
 
 ### 1. Set Up Your Data
@@ -29,8 +31,8 @@ Use intuitive slash commands to analyze your data:
 # Create comprehensive report
 /report user_behavior_sample.csv complete markdown
 
-# Complete automated workflow
-/do-all user_behavior_sample.csv
+# Complete interactive workflow with human feedback checkpoints
+/do-all
 ```
 
 ## 🎯 Key Features
@@ -61,31 +63,39 @@ Use intuitive slash commands to analyze your data:
 **Best for:** Thorough analysis with human oversight and feedback
 
 ```bash
-/do-all [domain] [output_format]
+/do-all
 ```
 
 **What it does:**
-- ✅ Analyzes data from `data_storage/`
+- ✅ Reads data from `data_storage/` (no parameters needed!)
 - ✅ 6-stage workflow with quality checks
-- ✅ **Human feedback checkpoints** at key stages
+- ✅ **3 Human feedback checkpoints** at critical stages
 - ✅ Interactive hypothesis generation
 - ✅ Custom code generation
 - ✅ Comprehensive documentation
 - ✅ Multiple output formats (HTML, PDF, Markdown, DOCX)
 
 **Workflow Stages:**
-1. Data Quality Assessment → **[human checkpoint]**
-2. Exploratory Analysis
-3. Hypothesis Generation → **[human checkpoint]**
-4. Visualization → **[human checkpoint]**
-5. Code Generation
-6. Report Generation
+1. Data Quality Assessment → **⚠️ [human checkpoint #1]** - Confirm data quality
+2. Exploratory Analysis - Statistical summaries, patterns, trends
+3. Hypothesis Generation → **⚠️ [human checkpoint #2]** - Review research directions
+4. Visualization → **⚠️ [human checkpoint #3]** - Approve visualization strategy
+5. Code Generation - Reproducible analysis pipeline
+6. Report Generation - Comprehensive final report
 
-**Parameters:**
-- `domain`: user-behavior, business-impact, technical-performance, custom
-- `output_format`: markdown, html, pdf, docx
+**Output Directory:**
+```
+complete_analysis/
+├── data_quality_report/          # Stage 1 output
+├── exploratory_analysis/         # Stage 2 output
+├── hypothesis_reports/           # Stage 3 output
+├── visualizations/               # Stage 4 output
+├── generated_code/               # Stage 5 output
+├── final_report/                 # Stage 6 output
+└── workflow_log/                 # Execution logs
+```
 
-**Output:** `complete_analysis/` directory with all stages documented
+**Execution Time:** 10-30 minutes (depends on data size)
 
 ---
 
@@ -93,12 +103,16 @@ Use intuitive slash commands to analyze your data:
 
 | Feature | `/do-more` | `/do-all` |
 |---------|-----------|-----------|
-| **Data Source** | Auto-scans data_storage/ | Uses data_storage/ |
-| **Parameters** | None required | [domain] [format] |
+| **Data Source** | Auto-scans data_storage/ | Reads from data_storage/ |
+| **Parameters** | None required | None |
 | **Human Feedback** | No | Yes (3 checkpoints) |
 | **Execution Time** | 2-5 minutes | 10-30 minutes |
-| **Skills Used** | 7+ auto-selected | All 12 available |
-| **Output Format** | HTML report | Multi-format |
+| **Skills Used** | 7+ auto-selected | Complete workflow (no skills) |
+| **Output Format** | HTML report | Multi-format (HTML/PDF/MD/DOCX) |
+| **Code Generation** | No | Yes (complete pipeline) |
+| **Analysis Stages** | Integrated execution | 6 separate stages |
+| **Interactive** | No | Yes (at checkpoints) |
+| **Report Detail** | Comprehensive | Extensive + technical |
 | **Best For** | Quick insights | Thorough analysis |
 | **Customization** | Automatic | Interactive |
 
@@ -133,7 +147,7 @@ Use intuitive slash commands to analyze your data:
 
 ### Intuitive Slash Commands
 - `/do-more` - **⭐ RECOMMENDED** Automatic multi-skill analysis (no parameters)
-- `/do-all [domain] [format]` - Complete interactive workflow with human feedback
+- `/do-all` - Complete interactive workflow with human feedback (no parameters)
 - `/analyze [dataset] [type]` - Perform data analysis
 - `/visualize [dataset] [type]` - Create visualizations
 - `/generate [language] [type]` - Generate analysis code
@@ -162,9 +176,7 @@ Use intuitive slash commands to analyze your data:
 ### Interactive Complete Analysis
 ```bash
 # For thorough analysis with human feedback checkpoints
-/do-all user-behavior html
-/do-all business-impact pdf
-/do-all technical-performance markdown
+/do-all
 
 # Includes:
 # ✓ Data Quality Assessment → [your confirmation]

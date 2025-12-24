@@ -1,21 +1,6 @@
 ---
-allowed-tools: Task, Read, Write, Bash, Grep, Glob, Skill
-argument-hint: [dataset] [domain] [output_format]
+allowed-tools: Task, Read, Write, Bash, Grep, Glob, Edit, DeleteFile, RunCommand, StopCommand, CheckCommandStatus, TodoWrite, SearchCodebase, WebSearch, LS
 description: 自动化完成整个数据分析工作流程，从数据质量检查到最终报告生成
-skills:
-  - data-exploration-visualization
-  - rfm-customer-segmentation
-  - retention-analysis
-  - funnel-analysis
-  - ab-testing-analyzer
-  - ltv-predictor
-  - regression-analysis-modeling
-  - attribution-analysis-modeling
-  - growth-model-analyzer
-  - recommender-system
-  - content-analysis
-  - user-profiling-analysis
-
 ---
 
 # 全自动化数据分析命令
@@ -23,82 +8,26 @@ skills:
 使用 `do-all` 命令自动化完成整个数据分析工作流程，整合所有现有的commands功能。
 
 ## Context
-- 数据集位置: @data_storage/$1
-- 分析领域: $2 (user-behavior, business-impact, technical-performance, custom)
-- 输出格式: $3 (markdown, html, pdf, docx)
+- 数据集位置: @data_storage/
 - 工作目录: !`pwd`
 - 输出目录: ./complete_analysis/
 - 人类反馈检查点: 关键步骤暂停等待用户确认
-
-## 技能集成
-本命令自动集成以下Claude Skills：
-- **data-exploration-visualization**: 探索性数据分析和可视化
-- **rfm-customer-segmentation**: 客户分群和细分分析
-- **retention-analysis**: 用户留存和流失分析
-- **funnel-analysis**: 转化漏斗分析
-- **ab-testing-analyzer**: A/B测试分析
-- **ltv-predictor**: 客户生命周期价值预测
-- **regression-analysis-modeling**: 回归分析和建模
-- **attribution-analysis-modeling**: 营销归因分析
-- **growth-model-analyzer**: 增长模型分析
-- **recommender-system**: 推荐系统分析
-- **content-analysis**: 内容分析
-- **user-profiling-analysis**: 用户画像分析
-
-## 技能选择逻辑
-
-### 根据分析领域自动选择技能
-
-#### user-behavior领域
-- **user-profiling-analysis**: 用户画像分析
-- **retention-analysis**: 用户留存分析
-- **funnel-analysis**: 转化漏斗分析
-
-#### business-impact领域
-- **ltv-predictor**: 客户生命周期价值预测
-- **attribution-analysis-modeling**: 营销归因分析
-- **growth-model-analyzer**: 增长模型分析
-- **regression-analysis-modeling**: 业务指标预测
-
-#### technical-performance领域
-- **regression-analysis-modeling**: 性能预测
-- **ab-testing-analyzer**: 技术方案对比
-
-#### custom领域
-- 根据用户自定义需求动态选择技能组合
-
-### 技能调用优先级 
-1. **领域专属技能**: 根据分析领域选择
-2. **增强技能**: 根据数据特征自动补充
 
 ## Your Task
 
 按照以下工作流程自动执行完整的数据分析：
 
 ### 1. 数据质量检查 (Quality Assurance)
-- 执行全面的数据质量检查和验证
+- 执行数据质量检查和验证
 - 识别数据问题和异常
-- 生成详细的质量评估报告
+- 生成质量评估报告
 - **人类反馈点**: 等待用户确认数据质量可接受
 
 ### 2. 探索性数据分析 (Data Exploration)
 - 执行全面的探索性数据分析
-  - 数据类型识别与分类（数值型、分类型、时间序列）
-  - 缺失值模式分析与可视化
-  - 分布特征分析（中心趋势、离散程度、偏度峰度）
 - 生成统计摘要和描述性分析
-  - 生成详细的单变量统计报告
-  - 多变量交叉分析与相关性检验
-  - 分组统计与对比分析
 - 识别关键模式和关系
-  - 变量间相关性分析（Pearson/Spearman/Kendall）
-  - 类别变量关联性检验（卡方检验）
-  - 时间序列趋势识别
 - 发现数据中的趋势和异常
-  - 异常值检测与可视化（箱线图、Z-score、IQR）
-  - 季节性与周期性模式识别
-  - 数据偏差与噪声识别
-- 自动调用合适的 **claude skills** 技能进行增强型数据分析
 
 ### 3. 研究假设生成 (Hypothesis Generation)
 - 基于数据模式生成研究假设
@@ -111,6 +40,7 @@ skills:
 - 生成交互式仪表板
 - 制作关键发现图表
 - 设计可视化故事板
+- 创建一个图文并茂的HTML综合报告，包含所有分析结果和可视化图表。
 
 ### 5. 代码生成 (Code Generation)
 - 生成可重现的分析代码
@@ -123,7 +53,6 @@ skills:
 - 创建完整的分析报告
 - 包含执行摘要和建议
 - 生成技术附录
-- 最终生成一个html格式的整合，方便用户阅读所有结果
 
 ## 工作流程设计
 
@@ -244,53 +173,6 @@ def generate_comprehensive_report(all_results, output_format):
     return format_report(report, output_format)
 ```
 
-
-
-### 阶段 7 Skills Integration Workflow
-
-#### Phase 1: Skill Assessment
-1. **Data Suitability Analysis**
-   - Evaluate dataset characteristics against skill requirements
-   - Identify applicable skills based on data type and structure
-   - Prioritize skills by potential business impact
-
-2. **Skill Selection**
-   - Select skills that align with analysis objectives
-   - Consider data availability and quality
-   - Balance technical complexity with business value
-
-#### Phase 2: Skill Execution
-1. **Data Preparation**
-   - Perform skill-specific data preprocessing
-   - Create required features and variables
-   - Validate data for skill requirements
-
-2. **Model Application**
-   - Execute specialized analytical models
-   - Perform calculations and statistical analysis
-   - Validate model assumptions and results
-
-3. **Insight Generation**
-   - Extract key findings from each skill
-   - Translate technical results into business insights
-   - Identify cross-skill patterns and relationships
-
-#### Phase 3: Synthesis and Reporting
-1. **Insight Synthesis**
-   - Combine findings from multiple skills
-   - Identify overarching themes and trends
-   - Prioritize insights by business value
-
-2. **Recommendation Development**
-   - Provide actionable recommendations based on combined insights
-   - Suggest implementation strategies
-   - Propose next steps for deeper analysis
-
-3. **Comprehensive Reporting**
-   - Integrate skill-specific reports into final deliverable
-   - Visualize cross-skill insights
-   - Document all methodologies and assumptions
-
 ## 人类反馈检查点
 
 ### 检查点 1: 数据质量确认
@@ -358,10 +240,10 @@ complete_analysis/
 │   ├── quality_checks.py
 │   └── analysis_functions.py
 ├── final_report/
-│   ├── comprehensive_analysis_report.$3
-│   ├── executive_summary.$3
-│   ├── technical_appendix.$3
-│   └── presentation_slides.$3
+│   ├── comprehensive_analysis_report
+│   ├── executive_summary
+│   ├── technical_appendix
+│   └── presentation_slides
 └── workflow_log/
     ├── analysis_progress.log
     ├── human_feedback.log
@@ -404,23 +286,9 @@ def handle_analysis_failure(failure_point, error_type):
 
 ### 基本用法
 ```bash
-/do-all user_behavior.csv user-behavior markdown
-/do-all sales_data.csv business-impact pdf
-/do-all system_metrics.csv technical-performance html
-/do-all research_data.csv custom docx
+/do-all  
 ```
 
-### 高级用法
-```bash
-# 带自定义配置的完整分析
-/do-all financial_data.csv business-impact html --config config.json
-
-# 跳过某些步骤
-/do-all user_data.csv user-behavior pdf --skip quality-check
-
-# 仅执行到特定步骤
-/do-all analytics_data.csv technical-performance markdown --stop-at visualization
-```
 
 ## 配置选项
 
@@ -530,37 +398,3 @@ def monitor_workflow_execution():
 - `/report` - 报告生成
 
 通过自动化整个工作流程，`do-all` 命令提供了一个完整的数据分析解决方案，从数据质量检查到最终报告生成，同时保持了对关键决策点的人工控制。
-
-## 技能集成最佳实践
-
-### 技能选择策略
-- **自动匹配**: 根据分析领域自动选择最合适的技能
-- **回退机制**: 如果技能调用失败，使用内置功能继续执行
-- **性能优化**: 并行调用不冲突的技能提高效率
-
-### 技能版本管理
-- 使用技能的最新稳定版本
-- 定期更新技能库
-- 保持技能间的兼容性
-
-### 错误处理
-- 技能调用失败时自动重试
-- 提供详细的错误日志
-- 允许手动干预和修复
-
-### 性能监控
-- 跟踪每个技能的执行时间
-- 监控资源使用情况
-- 优化技能调用顺序
-
-## 未来扩展
-
-### 技能增强
-- 添加更多专业技能（如机器学习、自然语言处理）
-- 支持自定义技能扩展
-- 实现技能组合推荐
-
-### 工作流程优化
-- 动态调整工作流程
-- 基于历史数据优化技能选择
-- 实现更智能的人类反馈机制

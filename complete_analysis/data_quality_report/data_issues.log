@@ -1,0 +1,56 @@
+
+======================================================================
+Dataset: Categories.csv
+======================================================================
+
+======================================================================
+Dataset: Customers.csv
+======================================================================
+
+⚠️  Consistency Issues:
+    - Duplicate IDs found in: customer_unique_id
+
+======================================================================
+Dataset: Order Items.csv
+======================================================================
+
+⚠️  Consistency Issues:
+    - Duplicate IDs found in: order_id
+    - Duplicate IDs found in: order_item_id
+    - Duplicate IDs found in: product_id
+    - Duplicate IDs found in: seller_id
+
+======================================================================
+Dataset: Order Payments.csv
+======================================================================
+
+⚠️  Consistency Issues:
+    - Duplicate IDs found in: order_id
+
+======================================================================
+Dataset: Orders.csv
+======================================================================
+
+======================================================================
+Dataset: Products.csv
+======================================================================
+
+⚠️  Consistency Issues:
+    - NULL values found in ID column: product_width_cm
+    - Duplicate IDs found in: product_width_cm
+
+======================================================================
+Dataset: Reviews.csv
+======================================================================
+
+⚠️  CRITICAL: Columns with >20% missing data:
+    - review_comment_title: 88.34% missing
+    - review_comment_message: 58.7% missing
+
+⚠️  Consistency Issues:
+    - Duplicate IDs found in: review_id
+    - Duplicate IDs found in: order_id
+
+======================================================================
+Dataset: Sellers.csv
+======================================================================

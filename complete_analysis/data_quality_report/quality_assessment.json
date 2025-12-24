@@ -1,0 +1,369 @@
+{
+  "Categories.csv": {
+    "dataset_name": "Categories.csv",
+    "shape": {
+      "rows": 71,
+      "columns": 2
+    },
+    "completeness": {
+      "completeness_score": 100.0,
+      "missing_cells": 0,
+      "total_cells": 142,
+      "missing_percentage": 0.0,
+      "columns_with_missing": {
+        "product_category_name": 0.0,
+        "product_category_name_english": 0.0
+      },
+      "critical_columns": {}
+    },
+    "accuracy": {
+      "accuracy_score": 100,
+      "outlier_count": 0,
+      "data_issues": [],
+      "type_issues": []
+    },
+    "consistency": {
+      "consistency_score": 100.0,
+      "duplicate_rows": 0,
+      "duplicate_percentage": 0.0,
+      "consistency_issues": []
+    },
+    "timeliness": {
+      "timeliness_score": 85,
+      "date_columns": {}
+    },
+    "overall_quality_score": 97.75
+  },
+  "Customers.csv": {
+    "dataset_name": "Customers.csv",
+    "shape": {
+      "rows": 99441,
+      "columns": 5
+    },
+    "completeness": {
+      "completeness_score": 100.0,
+      "missing_cells": 0,
+      "total_cells": 497205,
+      "missing_percentage": 0.0,
+      "columns_with_missing": {
+        "customer_id": 0.0,
+        "customer_unique_id": 0.0,
+        "customer_zip_code_prefix": 0.0,
+        "customer_city": 0.0,
+        "customer_state": 0.0
+      },
+      "critical_columns": {}
+    },
+    "accuracy": {
+      "accuracy_score": 100,
+      "outlier_count": 0,
+      "data_issues": [],
+      "type_issues": []
+    },
+    "consistency": {
+      "consistency_score": 95.0,
+      "duplicate_rows": 0,
+      "duplicate_percentage": 0.0,
+      "consistency_issues": [
+        "Duplicate IDs found in: customer_unique_id"
+      ]
+    },
+    "timeliness": {
+      "timeliness_score": 85,
+      "date_columns": {}
+    },
+    "overall_quality_score": 96.75
+  },
+  "Order Items.csv": {
+    "dataset_name": "Order Items.csv",
+    "shape": {
+      "rows": 112650,
+      "columns": 7
+    },
+    "completeness": {
+      "completeness_score": 100.0,
+      "missing_cells": 0,
+      "total_cells": 788550,
+      "missing_percentage": 0.0,
+      "columns_with_missing": {
+        "order_id": 0.0,
+        "order_item_id": 0.0,
+        "product_id": 0.0,
+        "seller_id": 0.0,
+        "shipping_limit_date": 0.0,
+        "price": 0.0,
+        "freight_value": 0.0
+      },
+      "critical_columns": {}
+    },
+    "accuracy": {
+      "accuracy_score": 100,
+      "outlier_count": 34545,
+      "data_issues": [],
+      "type_issues": []
+    },
+    "consistency": {
+      "consistency_score": 80.0,
+      "duplicate_rows": 0,
+      "duplicate_percentage": 0.0,
+      "consistency_issues": [
+        "Duplicate IDs found in: order_id",
+        "Duplicate IDs found in: order_item_id",
+        "Duplicate IDs found in: product_id",
+        "Duplicate IDs found in: seller_id"
+      ]
+    },
+    "timeliness": {
+      "timeliness_score": 85,
+      "date_columns": {
+        "shipping_limit_date": {
+          "date_range_days": 1298,
+          "most_recent_date": "2020-04-09 22:35:08",
+          "oldest_date": "2016-09-19 00:15:34",
+          "valid_dates": 112650,
+          "missing_dates": 0
+        }
+      }
+    },
+    "overall_quality_score": 93.75
+  },
+  "Order Payments.csv": {
+    "dataset_name": "Order Payments.csv",
+    "shape": {
+      "rows": 103886,
+      "columns": 5
+    },
+    "completeness": {
+      "completeness_score": 100.0,
+      "missing_cells": 0,
+      "total_cells": 519430,
+      "missing_percentage": 0.0,
+      "columns_with_missing": {
+        "order_id": 0.0,
+        "payment_sequential": 0.0,
+        "payment_type": 0.0,
+        "payment_installments": 0.0,
+        "payment_value": 0.0
+      },
+      "critical_columns": {}
+    },
+    "accuracy": {
+      "accuracy_score": 100,
+      "outlier_count": 18820,
+      "data_issues": [],
+      "type_issues": []
+    },
+    "consistency": {
+      "consistency_score": 95.0,
+      "duplicate_rows": 0,
+      "duplicate_percentage": 0.0,
+      "consistency_issues": [
+        "Duplicate IDs found in: order_id"
+      ]
+    },
+    "timeliness": {
+      "timeliness_score": 85,
+      "date_columns": {}
+    },
+    "overall_quality_score": 96.75
+  },
+  "Orders.csv": {
+    "dataset_name": "Orders.csv",
+    "shape": {
+      "rows": 99441,
+      "columns": 8
+    },
+    "completeness": {
+      "completeness_score": 99.38,
+      "missing_cells": 4908,
+      "total_cells": 795528,
+      "missing_percentage": 0.62,
+      "columns_with_missing": {
+        "order_id": 0.0,
+        "customer_id": 0.0,
+        "order_status": 0.0,
+        "order_purchase_timestamp": 0.0,
+        "order_approved_at": 0.16,
+        "order_delivered_carrier_date": 1.79,
+        "order_delivered_customer_date": 2.98,
+        "order_estimated_delivery_date": 0.0
+      },
+      "critical_columns": {}
+    },
+    "accuracy": {
+      "accuracy_score": 100,
+      "outlier_count": 0,
+      "data_issues": [],
+      "type_issues": []
+    },
+    "consistency": {
+      "consistency_score": 100.0,
+      "duplicate_rows": 0,
+      "duplicate_percentage": 0.0,
+      "consistency_issues": []
+    },
+    "timeliness": {
+      "timeliness_score": 85,
+      "date_columns": {
+        "order_delivered_carrier_date": {
+          "date_range_days": 703,
+          "most_recent_date": "2018-09-11 19:48:00",
+          "oldest_date": "2016-10-08 10:34:00",
+          "valid_dates": 97658,
+          "missing_dates": 1783
+        },
+        "order_delivered_customer_date": {
+          "date_range_days": 735,
+          "most_recent_date": "2018-10-17 13:22:00",
+          "oldest_date": "2016-10-11 13:46:00",
+          "valid_dates": 96476,
+          "missing_dates": 2965
+        },
+        "order_estimated_delivery_date": {
+          "date_range_days": 773,
+          "most_recent_date": "2018-11-12 00:00:00",
+          "oldest_date": "2016-09-30 00:00:00",
+          "valid_dates": 99441,
+          "missing_dates": 0
+        }
+      }
+    },
+    "overall_quality_score": 97.53
+  },
+  "Products.csv": {
+    "dataset_name": "Products.csv",
+    "shape": {
+      "rows": 32951,
+      "columns": 9
+    },
+    "completeness": {
+      "completeness_score": 99.17,
+      "missing_cells": 2448,
+      "total_cells": 296559,
+      "missing_percentage": 0.83,
+      "columns_with_missing": {
+        "product_id": 0.0,
+        "product_category_name": 1.85,
+        "product_name_lenght": 1.85,
+        "product_description_lenght": 1.85,
+        "product_photos_qty": 1.85,
+        "product_weight_g": 0.01,
+        "product_length_cm": 0.01,
+        "product_height_cm": 0.01,
+        "product_width_cm": 0.01
+      },
+      "critical_columns": {}
+    },
+    "accuracy": {
+      "accuracy_score": 100,
+      "outlier_count": 11952,
+      "data_issues": [],
+      "type_issues": []
+    },
+    "consistency": {
+      "consistency_score": 90.0,
+      "duplicate_rows": 0,
+      "duplicate_percentage": 0.0,
+      "consistency_issues": [
+        "NULL values found in ID column: product_width_cm",
+        "Duplicate IDs found in: product_width_cm"
+      ]
+    },
+    "timeliness": {
+      "timeliness_score": 85,
+      "date_columns": {}
+    },
+    "overall_quality_score": 95.46
+  },
+  "Reviews.csv": {
+    "dataset_name": "Reviews.csv",
+    "shape": {
+      "rows": 99224,
+      "columns": 7
+    },
+    "completeness": {
+      "completeness_score": 78.99,
+      "missing_cells": 145903,
+      "total_cells": 694568,
+      "missing_percentage": 21.01,
+      "columns_with_missing": {
+        "review_id": 0.0,
+        "order_id": 0.0,
+        "review_score": 0.0,
+        "review_comment_title": 88.34,
+        "review_comment_message": 58.7,
+        "review_creation_date": 0.0,
+        "review_answer_timestamp": 0.0
+      },
+      "critical_columns": {
+        "review_comment_title": 88.34,
+        "review_comment_message": 58.7
+      }
+    },
+    "accuracy": {
+      "accuracy_score": 100,
+      "outlier_count": 14575,
+      "data_issues": [],
+      "type_issues": []
+    },
+    "consistency": {
+      "consistency_score": 90.0,
+      "duplicate_rows": 0,
+      "duplicate_percentage": 0.0,
+      "consistency_issues": [
+        "Duplicate IDs found in: review_id",
+        "Duplicate IDs found in: order_id"
+      ]
+    },
+    "timeliness": {
+      "timeliness_score": 85,
+      "date_columns": {
+        "review_creation_date": {
+          "date_range_days": 698,
+          "most_recent_date": "2018-08-31 00:00:00",
+          "oldest_date": "2016-10-02 00:00:00",
+          "valid_dates": 99224,
+          "missing_dates": 0
+        }
+      }
+    },
+    "overall_quality_score": 88.4
+  },
+  "Sellers.csv": {
+    "dataset_name": "Sellers.csv",
+    "shape": {
+      "rows": 3095,
+      "columns": 4
+    },
+    "completeness": {
+      "completeness_score": 100.0,
+      "missing_cells": 0,
+      "total_cells": 12380,
+      "missing_percentage": 0.0,
+      "columns_with_missing": {
+        "seller_id": 0.0,
+        "seller_zip_code_prefix": 0.0,
+        "seller_city": 0.0,
+        "seller_state": 0.0
+      },
+      "critical_columns": {}
+    },
+    "accuracy": {
+      "accuracy_score": 100,
+      "outlier_count": 0,
+      "data_issues": [],
+      "type_issues": []
+    },
+    "consistency": {
+      "consistency_score": 100.0,
+      "duplicate_rows": 0,
+      "duplicate_percentage": 0.0,
+      "consistency_issues": []
+    },
+    "timeliness": {
+      "timeliness_score": 85,
+      "date_columns": {}
+    },
+    "overall_quality_score": 97.75
+  }
+}
