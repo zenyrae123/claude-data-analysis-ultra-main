@@ -4,6 +4,8 @@ A modern, intelligent data analysis platform built with Claude Code's sub-agents
 
 简单的一句话： 2个命令， /do-all 常规数据分析 ； /do-more 互联网数据分析 。 而分析数据是放在 /data_storage 。就这么简单，用起来吧！
 
+注意： 下载项目下来，分析数据是放在 /data_storage [删去原来的demo数据] ，你需要先删除 complete_analysis 和 do_more_analysis 这两个文件夹。我这里放着是给你参考最终的分析结果，作为例子。
+
 ## 🚀 Quick Start
 
 ### 1. Set Up Your Data
@@ -16,6 +18,9 @@ cp your_data.csv ./data_storage/
 Use intuitive slash commands to analyze your data:
 
 ```bash
+# Complete interactive workflow with human feedback checkpoints
+/do-all
+
 # ⭐ NEW: Automatic multi-skill analysis
 /do-more
 
@@ -31,8 +36,7 @@ Use intuitive slash commands to analyze your data:
 # Create comprehensive report
 /report user_behavior_sample.csv complete markdown
 
-# Complete interactive workflow with human feedback checkpoints
-/do-all
+
 ```
 
 ## 🎯 Key Features
