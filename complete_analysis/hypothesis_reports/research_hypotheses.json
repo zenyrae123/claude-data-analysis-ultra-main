@@ -1,0 +1,498 @@
+[
+  {
+    "id": "HYP_001",
+    "category": "Correlation Analysis",
+    "title": "Product Price and Shipping Cost Relationship",
+    "hypothesis": "There is a positive correlation (r=0.414) between product price and freight value.",
+    "rationale": "Higher-priced items may incur different shipping costs due to weight, value insurance, or shipping method.",
+    "test_method": "Pearson correlation test, linear regression analysis",
+    "expected_outcome": "Significant correlation between price and freight",
+    "business_impact": "Pricing strategy optimization, shipping cost structure",
+    "datasets": [
+      "Orders.csv",
+      "Order Items.csv"
+    ],
+    "validation_plan": {
+      "hypothesis_id": "HYP_001",
+      "validation_steps": [
+        "1. Data preparation and cleaning",
+        "2. Descriptive statistics and visualization",
+        "3. Statistical testing",
+        "4. Effect size calculation",
+        "5. Business impact assessment"
+      ],
+      "required_metrics": [
+        "Statistical significance (p-value < 0.05)",
+        "Effect size (Cohen's d or correlation strength)",
+        "Confidence interval (95%)",
+        "Business impact magnitude"
+      ],
+      "potential_challenges": [
+        "Data quality issues (missing values, outliers)",
+        "Sample size limitations",
+        "Confounding variables",
+        "Causality vs correlation"
+      ]
+    }
+  },
+  {
+    "id": "HYP_002",
+    "category": "Product Analysis",
+    "title": "Product Dimensions and Weight Correlation",
+    "hypothesis": "Product weight strongly correlates with product dimensions (length, width, height).",
+    "rationale": "Larger products tend to be heavier, affecting shipping costs and warehouse storage requirements.",
+    "test_method": "Multi-variable correlation analysis, principal component analysis",
+    "expected_outcome": "Strong positive correlation (r > 0.5) between weight and dimensions",
+    "business_impact": "Shipping cost estimation, warehouse optimization, packaging design",
+    "datasets": [
+      "Products.csv"
+    ],
+    "validation_plan": {
+      "hypothesis_id": "HYP_002",
+      "validation_steps": [
+        "1. Data preparation and cleaning",
+        "2. Descriptive statistics and visualization",
+        "3. Statistical testing",
+        "4. Effect size calculation",
+        "5. Business impact assessment"
+      ],
+      "required_metrics": [
+        "Statistical significance (p-value < 0.05)",
+        "Effect size (Cohen's d or correlation strength)",
+        "Confidence interval (95%)",
+        "Business impact magnitude"
+      ],
+      "potential_challenges": [
+        "Data quality issues (missing values, outliers)",
+        "Sample size limitations",
+        "Confounding variables",
+        "Causality vs correlation"
+      ]
+    }
+  },
+  {
+    "id": "HYP_003",
+    "category": "Temporal Analysis",
+    "title": "Weekly Purchase Pattern Variation",
+    "hypothesis": "Purchase volume varies significantly by day of week, with peak activity on day 0.",
+    "rationale": "Consumer behavior shows weekly patterns due to work schedules and weekend leisure time.",
+    "test_method": "ANOVA test, chi-square test for independence",
+    "expected_outcome": "Significant variation in purchase volume across days",
+    "business_impact": "Marketing campaign scheduling, resource allocation, inventory planning",
+    "datasets": [
+      "Orders.csv"
+    ],
+    "validation_plan": {
+      "hypothesis_id": "HYP_003",
+      "validation_steps": [
+        "1. Data preparation and cleaning",
+        "2. Descriptive statistics and visualization",
+        "3. Statistical testing",
+        "4. Effect size calculation",
+        "5. Business impact assessment"
+      ],
+      "required_metrics": [
+        "Statistical significance (p-value < 0.05)",
+        "Effect size (Cohen's d or correlation strength)",
+        "Confidence interval (95%)",
+        "Business impact magnitude"
+      ],
+      "potential_challenges": [
+        "Data quality issues (missing values, outliers)",
+        "Sample size limitations",
+        "Confounding variables",
+        "Causality vs correlation"
+      ]
+    }
+  },
+  {
+    "id": "HYP_004",
+    "category": "Temporal Analysis",
+    "title": "Daily Purchase Time Distribution",
+    "hypothesis": "Purchase activity peaks during hour 16:00, showing clear daily pattern.",
+    "rationale": "Shopping behavior follows daily routines, with peaks during lunch hours and evenings.",
+    "test_method": "Time series analysis, hourly distribution comparison",
+    "expected_outcome": "Significant hourly variation in purchase patterns",
+    "business_impact": "Ad scheduling, server capacity planning, customer support staffing",
+    "datasets": [
+      "Orders.csv"
+    ],
+    "validation_plan": {
+      "hypothesis_id": "HYP_004",
+      "validation_steps": [
+        "1. Data preparation and cleaning",
+        "2. Descriptive statistics and visualization",
+        "3. Statistical testing",
+        "4. Effect size calculation",
+        "5. Business impact assessment"
+      ],
+      "required_metrics": [
+        "Statistical significance (p-value < 0.05)",
+        "Effect size (Cohen's d or correlation strength)",
+        "Confidence interval (95%)",
+        "Business impact magnitude"
+      ],
+      "potential_challenges": [
+        "Data quality issues (missing values, outliers)",
+        "Sample size limitations",
+        "Confounding variables",
+        "Causality vs correlation"
+      ]
+    }
+  },
+  {
+    "id": "HYP_005",
+    "category": "Logistics Analysis",
+    "title": "Delivery Time Consistency",
+    "hypothesis": "Average delivery time is 12.1 days with significant variation across regions.",
+    "rationale": "Delivery times vary by distance, location, and logistics efficiency.",
+    "test_method": "Descriptive statistics, regional comparison analysis",
+    "expected_outcome": "Significant variation in delivery times by customer location",
+    "business_impact": "Customer satisfaction improvement, logistics optimization, delivery expectation management",
+    "datasets": [
+      "Orders.csv",
+      "Customers.csv"
+    ],
+    "validation_plan": {
+      "hypothesis_id": "HYP_005",
+      "validation_steps": [
+        "1. Data preparation and cleaning",
+        "2. Descriptive statistics and visualization",
+        "3. Statistical testing",
+        "4. Effect size calculation",
+        "5. Business impact assessment"
+      ],
+      "required_metrics": [
+        "Statistical significance (p-value < 0.05)",
+        "Effect size (Cohen's d or correlation strength)",
+        "Confidence interval (95%)",
+        "Business impact magnitude"
+      ],
+      "potential_challenges": [
+        "Data quality issues (missing values, outliers)",
+        "Sample size limitations",
+        "Confounding variables",
+        "Causality vs correlation"
+      ]
+    }
+  },
+  {
+    "id": "HYP_006",
+    "category": "Customer Analysis",
+    "title": "Geographic Customer Concentration",
+    "hypothesis": "Customer distribution is highly concentrated, with top 3 states (top: SP) accounting for 66.6% of customers.",
+    "rationale": "E-commerce adoption varies by region due to infrastructure, economic development, and digital literacy.",
+    "test_method": "Chi-square goodness-of-fit test, geographic concentration analysis",
+    "expected_outcome": "Significant deviation from uniform distribution across states",
+    "business_impact": "Regional marketing strategies, logistics hub placement, market expansion planning",
+    "datasets": [
+      "Customers.csv"
+    ],
+    "validation_plan": {
+      "hypothesis_id": "HYP_006",
+      "validation_steps": [
+        "1. Data preparation and cleaning",
+        "2. Descriptive statistics and visualization",
+        "3. Statistical testing",
+        "4. Effect size calculation",
+        "5. Business impact assessment"
+      ],
+      "required_metrics": [
+        "Statistical significance (p-value < 0.05)",
+        "Effect size (Cohen's d or correlation strength)",
+        "Confidence interval (95%)",
+        "Business impact magnitude"
+      ],
+      "potential_challenges": [
+        "Data quality issues (missing values, outliers)",
+        "Sample size limitations",
+        "Confounding variables",
+        "Causality vs correlation"
+      ]
+    }
+  },
+  {
+    "id": "HYP_007",
+    "category": "Customer Behavior",
+    "title": "Customer Repeat Purchase Rate",
+    "hypothesis": "0.0% of customers have made repeat purchases, indicating customer loyalty level.",
+    "rationale": "High repeat purchase rate indicates strong customer retention and satisfaction.",
+    "test_method": "Cohort analysis, retention rate calculation",
+    "expected_outcome": "Repeat purchase rate varies by customer segment and product category",
+    "business_impact": "Customer loyalty programs, retention strategies, LTV optimization",
+    "datasets": [
+      "Orders.csv",
+      "Customers.csv"
+    ],
+    "validation_plan": {
+      "hypothesis_id": "HYP_007",
+      "validation_steps": [
+        "1. Data preparation and cleaning",
+        "2. Descriptive statistics and visualization",
+        "3. Statistical testing",
+        "4. Effect size calculation",
+        "5. Business impact assessment"
+      ],
+      "required_metrics": [
+        "Statistical significance (p-value < 0.05)",
+        "Effect size (Cohen's d or correlation strength)",
+        "Confidence interval (95%)",
+        "Business impact magnitude"
+      ],
+      "potential_challenges": [
+        "Data quality issues (missing values, outliers)",
+        "Sample size limitations",
+        "Confounding variables",
+        "Causality vs correlation"
+      ]
+    }
+  },
+  {
+    "id": "HYP_008",
+    "category": "Product Analysis",
+    "title": "Product Category Concentration",
+    "hypothesis": "Product catalog is dominated by category \"cama_mesa_banho\" with 3029 products.",
+    "rationale": "Certain product categories have higher market demand and seller participation.",
+    "test_method": "Category distribution analysis, Pareto analysis (80/20 rule)",
+    "expected_outcome": "Top 20% of categories represent 80% of products",
+    "business_impact": "Category management, inventory strategy, marketplace positioning",
+    "datasets": [
+      "Products.csv",
+      "Categories.csv"
+    ],
+    "validation_plan": {
+      "hypothesis_id": "HYP_008",
+      "validation_steps": [
+        "1. Data preparation and cleaning",
+        "2. Descriptive statistics and visualization",
+        "3. Statistical testing",
+        "4. Effect size calculation",
+        "5. Business impact assessment"
+      ],
+      "required_metrics": [
+        "Statistical significance (p-value < 0.05)",
+        "Effect size (Cohen's d or correlation strength)",
+        "Confidence interval (95%)",
+        "Business impact magnitude"
+      ],
+      "potential_challenges": [
+        "Data quality issues (missing values, outliers)",
+        "Sample size limitations",
+        "Confounding variables",
+        "Causality vs correlation"
+      ]
+    }
+  },
+  {
+    "id": "HYP_009",
+    "category": "Product Analysis",
+    "title": "Product Price Distribution Pattern",
+    "hypothesis": "Product prices show right-skewed distribution (median: $74.99, mean: $120.65).",
+    "rationale": "Most products are low-to-mid price, with fewer high-value luxury items.",
+    "test_method": "Distribution analysis, skewness test, price segment analysis",
+    "expected_outcome": "Right-skewed distribution with long tail of high-priced items",
+    "business_impact": "Price segmentation strategy, commission structure, target customer definition",
+    "datasets": [
+      "Order Items.csv"
+    ],
+    "validation_plan": {
+      "hypothesis_id": "HYP_009",
+      "validation_steps": [
+        "1. Data preparation and cleaning",
+        "2. Descriptive statistics and visualization",
+        "3. Statistical testing",
+        "4. Effect size calculation",
+        "5. Business impact assessment"
+      ],
+      "required_metrics": [
+        "Statistical significance (p-value < 0.05)",
+        "Effect size (Cohen's d or correlation strength)",
+        "Confidence interval (95%)",
+        "Business impact magnitude"
+      ],
+      "potential_challenges": [
+        "Data quality issues (missing values, outliers)",
+        "Sample size limitations",
+        "Confounding variables",
+        "Causality vs correlation"
+      ]
+    }
+  },
+  {
+    "id": "HYP_010",
+    "category": "Customer Satisfaction",
+    "title": "Customer Satisfaction Score Distribution",
+    "hypothesis": "Average review score is 4.09/5.0, indicating overall customer satisfaction level.",
+    "rationale": "Review scores reflect product quality, delivery experience, and customer service.",
+    "test_method": "Descriptive statistics, score distribution analysis",
+    "expected_outcome": "Score distribution shows polarization (high 4-5 stars or low 1-2 stars)",
+    "business_impact": "Quality monitoring, seller performance evaluation, customer experience improvement",
+    "datasets": [
+      "Reviews.csv"
+    ],
+    "validation_plan": {
+      "hypothesis_id": "HYP_010",
+      "validation_steps": [
+        "1. Data preparation and cleaning",
+        "2. Descriptive statistics and visualization",
+        "3. Statistical testing",
+        "4. Effect size calculation",
+        "5. Business impact assessment"
+      ],
+      "required_metrics": [
+        "Statistical significance (p-value < 0.05)",
+        "Effect size (Cohen's d or correlation strength)",
+        "Confidence interval (95%)",
+        "Business impact magnitude"
+      ],
+      "potential_challenges": [
+        "Data quality issues (missing values, outliers)",
+        "Sample size limitations",
+        "Confounding variables",
+        "Causality vs correlation"
+      ]
+    }
+  },
+  {
+    "id": "HYP_011",
+    "category": "Customer Feedback",
+    "title": "Review Comment Length and Score Relationship",
+    "hypothesis": "Customers leaving longer comments (avg: 28 chars) show different score patterns.",
+    "rationale": "Detailed comments often indicate strong opinions (very positive or very negative).",
+    "test_method": "Correlation analysis, sentiment analysis by score",
+    "expected_outcome": "Negative reviews tend to have longer comments than positive reviews",
+    "business_impact": "Review sentiment analysis, automated feedback triage, customer insight extraction",
+    "datasets": [
+      "Reviews.csv"
+    ],
+    "validation_plan": {
+      "hypothesis_id": "HYP_011",
+      "validation_steps": [
+        "1. Data preparation and cleaning",
+        "2. Descriptive statistics and visualization",
+        "3. Statistical testing",
+        "4. Effect size calculation",
+        "5. Business impact assessment"
+      ],
+      "required_metrics": [
+        "Statistical significance (p-value < 0.05)",
+        "Effect size (Cohen's d or correlation strength)",
+        "Confidence interval (95%)",
+        "Business impact magnitude"
+      ],
+      "potential_challenges": [
+        "Data quality issues (missing values, outliers)",
+        "Sample size limitations",
+        "Confounding variables",
+        "Causality vs correlation"
+      ]
+    }
+  },
+  {
+    "id": "HYP_012",
+    "category": "Payment Analysis",
+    "title": "Payment Method Preference",
+    "hypothesis": "Payment method \"credit_card\" dominates with 73.9% of all transactions.",
+    "rationale": "Payment preferences vary by region, demographics, and order value.",
+    "test_method": "Chi-square test, payment method vs order value analysis",
+    "expected_outcome": "Significant preference for specific payment methods",
+    "business_impact": "Payment gateway optimization, checkout flow design, payment cost reduction",
+    "datasets": [
+      "Order Payments.csv"
+    ],
+    "validation_plan": {
+      "hypothesis_id": "HYP_012",
+      "validation_steps": [
+        "1. Data preparation and cleaning",
+        "2. Descriptive statistics and visualization",
+        "3. Statistical testing",
+        "4. Effect size calculation",
+        "5. Business impact assessment"
+      ],
+      "required_metrics": [
+        "Statistical significance (p-value < 0.05)",
+        "Effect size (Cohen's d or correlation strength)",
+        "Confidence interval (95%)",
+        "Business impact magnitude"
+      ],
+      "potential_challenges": [
+        "Data quality issues (missing values, outliers)",
+        "Sample size limitations",
+        "Confounding variables",
+        "Causality vs correlation"
+      ]
+    }
+  },
+  {
+    "id": "HYP_013",
+    "category": "Payment Analysis",
+    "title": "Installment Payment Usage",
+    "hypothesis": "49.4% of orders use installment payments, with average 2.9 installments.",
+    "rationale": "Installments enable larger purchases by spreading cost over time.",
+    "test_method": "Installment vs total value correlation analysis",
+    "expected_outcome": "Higher order values correlate with more installments",
+    "business_impact": "Financing strategy, credit risk management, average order value optimization",
+    "datasets": [
+      "Order Payments.csv",
+      "Order Items.csv"
+    ],
+    "validation_plan": {
+      "hypothesis_id": "HYP_013",
+      "validation_steps": [
+        "1. Data preparation and cleaning",
+        "2. Descriptive statistics and visualization",
+        "3. Statistical testing",
+        "4. Effect size calculation",
+        "5. Business impact assessment"
+      ],
+      "required_metrics": [
+        "Statistical significance (p-value < 0.05)",
+        "Effect size (Cohen's d or correlation strength)",
+        "Confidence interval (95%)",
+        "Business impact magnitude"
+      ],
+      "potential_challenges": [
+        "Data quality issues (missing values, outliers)",
+        "Sample size limitations",
+        "Confounding variables",
+        "Causality vs correlation"
+      ]
+    }
+  },
+  {
+    "id": "HYP_014",
+    "category": "Seller Analysis",
+    "title": "Seller Geographic Distribution",
+    "hypothesis": "Sellers are concentrated in state \"SP\", indicating regional business hubs.",
+    "rationale": "Sellers cluster in commercial centers with good logistics infrastructure.",
+    "test_method": "Geographic concentration analysis, seller vs customer location comparison",
+    "expected_outcome": "Significant seller concentration in specific states",
+    "business_impact": "Seller acquisition strategy, logistics network design, regional marketing",
+    "datasets": [
+      "Sellers.csv",
+      "Customers.csv"
+    ],
+    "validation_plan": {
+      "hypothesis_id": "HYP_014",
+      "validation_steps": [
+        "1. Data preparation and cleaning",
+        "2. Descriptive statistics and visualization",
+        "3. Statistical testing",
+        "4. Effect size calculation",
+        "5. Business impact assessment"
+      ],
+      "required_metrics": [
+        "Statistical significance (p-value < 0.05)",
+        "Effect size (Cohen's d or correlation strength)",
+        "Confidence interval (95%)",
+        "Business impact magnitude"
+      ],
+      "potential_challenges": [
+        "Data quality issues (missing values, outliers)",
+        "Sample size limitations",
+        "Confounding variables",
+        "Causality vs correlation"
+      ]
+    }
+  }
+]

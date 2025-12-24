@@ -1,0 +1,1485 @@
+{
+  "Categories.csv": {
+    "statistical_summary": {
+      "basic_info": {
+        "rows": 71,
+        "columns": 2,
+        "memory_usage_mb": 0.01
+      },
+      "numeric_stats": {},
+      "categorical_stats": {
+        "product_category_name": {
+          "unique_count": 71,
+          "most_common": {
+            "beleza_saude": 1,
+            "alimentos": 1,
+            "fashion_esporte": 1,
+            "fashion_underwear_e_moda_praia": 1,
+            "construcao_ferramentas_seguranca": 1
+          },
+          "missing": 0
+        },
+        "product_category_name_english": {
+          "unique_count": 71,
+          "most_common": {
+            "health_beauty": 1,
+            "food": 1,
+            "fashion_sport": 1,
+            "fashion_underwear_beach": 1,
+            "construction_tools_safety": 1
+          },
+          "missing": 0
+        }
+      },
+      "temporal_stats": {}
+    },
+    "patterns": {
+      "trends": [],
+      "seasonal_patterns": [],
+      "distribution_patterns": [],
+      "association_patterns": []
+    },
+    "correlations": {
+      "strong_correlations": [],
+      "moderate_correlations": [],
+      "correlation_matrix": {}
+    },
+    "anomalies": {
+      "statistical_outliers": [],
+      "value_anomalies": [],
+      "missing_data_patterns": []
+    }
+  },
+  "Customers.csv": {
+    "statistical_summary": {
+      "basic_info": {
+        "rows": 99441,
+        "columns": 5,
+        "memory_usage_mb": 29.62
+      },
+      "numeric_stats": {
+        "customer_zip_code_prefix": {
+          "count": 99441,
+          "missing": 0,
+          "mean": 35137.47458291851,
+          "median": 24416.0,
+          "std": 29797.938996206118,
+          "min": 1003.0,
+          "max": 99990.0,
+          "q25": 11347.0,
+          "q75": 58900.0,
+          "skewness": 0.7790133135471039,
+          "kurtosis": -0.7882246311344008
+        }
+      },
+      "categorical_stats": {
+        "customer_id": {
+          "unique_count": 99441,
+          "most_common": {
+            "06b8999e2fba1a1fbc88172c00ba8bc7": 1,
+            "c023f30c1147aeb0358474f3b1dbc707": 1,
+            "b5cbf43f42281920a175fc99650c91d6": 1,
+            "19f4e983f8f05b7de16670f8a0cf0ac7": 1,
+            "229ac14c6ee6d6a606264ebcc861beb7": 1
+          },
+          "missing": 0
+        },
+        "customer_unique_id": {
+          "unique_count": 96096,
+          "most_common": {
+            "8d50f5eadf50201ccdcedfb9e2ac8455": 17,
+            "3e43e6105506432c953e165fb2acf44c": 9,
+            "1b6c7548a2a1f9037c1fd3ddfed95f33": 7,
+            "ca77025e7201e3b30c44b472ff346268": 7,
+            "6469f99c1f9dfae7733b25662e7f1782": 7
+          },
+          "missing": 0
+        },
+        "customer_city": {
+          "unique_count": 4119,
+          "most_common": {
+            "sao paulo": 15540,
+            "rio de janeiro": 6882,
+            "belo horizonte": 2773,
+            "brasilia": 2131,
+            "curitiba": 1521
+          },
+          "missing": 0
+        },
+        "customer_state": {
+          "unique_count": 27,
+          "most_common": {
+            "SP": 41746,
+            "RJ": 12852,
+            "MG": 11635,
+            "RS": 5466,
+            "PR": 5045
+          },
+          "missing": 0
+        }
+      },
+      "temporal_stats": {}
+    },
+    "patterns": {
+      "trends": [],
+      "seasonal_patterns": [],
+      "distribution_patterns": [
+        {
+          "column": "customer_zip_code_prefix",
+          "distribution_type": "non_normal",
+          "skewness": 0.779,
+          "kurtosis": -0.788
+        }
+      ],
+      "association_patterns": []
+    },
+    "correlations": {
+      "strong_correlations": [],
+      "moderate_correlations": [],
+      "correlation_matrix": {}
+    },
+    "anomalies": {
+      "statistical_outliers": [],
+      "value_anomalies": [],
+      "missing_data_patterns": []
+    }
+  },
+  "Order Items.csv": {
+    "statistical_summary": {
+      "basic_info": {
+        "rows": 112650,
+        "columns": 7,
+        "memory_usage_mb": 39.43
+      },
+      "numeric_stats": {
+        "order_item_id": {
+          "count": 112650,
+          "missing": 0,
+          "mean": 1.1978339991122948,
+          "median": 1.0,
+          "std": 0.7051240313951733,
+          "min": 1.0,
+          "max": 21.0,
+          "q25": 1.0,
+          "q75": 1.0,
+          "skewness": 7.580254788810673,
+          "kurtosis": 103.85269765823804
+        },
+        "price": {
+          "count": 112650,
+          "missing": 0,
+          "mean": 120.65373901464716,
+          "median": 74.99,
+          "std": 183.63392805025939,
+          "min": 0.85,
+          "max": 6735.0,
+          "q25": 39.9,
+          "q75": 134.9,
+          "skewness": 7.923102760715916,
+          "kurtosis": 120.82288192024728
+        },
+        "freight_value": {
+          "count": 112650,
+          "missing": 0,
+          "mean": 19.990319928983578,
+          "median": 16.26,
+          "std": 15.806405412297083,
+          "min": 0.0,
+          "max": 409.68,
+          "q25": 13.08,
+          "q75": 21.15,
+          "skewness": 5.639794522020148,
+          "kurtosis": 59.785545672105656
+        }
+      },
+      "categorical_stats": {
+        "order_id": {
+          "unique_count": 98666,
+          "most_common": {
+            "8272b63d03f5f79c56e9e4120aec44ef": 21,
+            "1b15974a0141d54e36626dca3fdc731a": 20,
+            "ab14fdcfbe524636d65ee38360e22ce8": 20,
+            "9ef13efd6949e4573a18964dd1bbe7f5": 15,
+            "428a2f660dc84138d969ccd69a0ab6d5": 15
+          },
+          "missing": 0
+        },
+        "product_id": {
+          "unique_count": 32951,
+          "most_common": {
+            "aca2eb7d00ea1a7b8ebd4e68314663af": 527,
+            "99a4788cb24856965c36a24e339b6058": 488,
+            "422879e10f46682990de24d770e7f83d": 484,
+            "389d119b48cf3043d311335e499d9c6b": 392,
+            "368c6c730842d78016ad823897a372db": 388
+          },
+          "missing": 0
+        },
+        "seller_id": {
+          "unique_count": 3095,
+          "most_common": {
+            "6560211a19b47992c3666cc44a7e94c0": 2033,
+            "4a3ca9315b744ce9f8e9374361493884": 1987,
+            "1f50f920176fa81dab994f9023523100": 1931,
+            "cc419e0650a3c5ba77189a1882b7556a": 1775,
+            "da8622b14eb17ae2831f4ac5b9dab84a": 1551
+          },
+          "missing": 0
+        },
+        "shipping_limit_date": {
+          "unique_count": 93318,
+          "most_common": {
+            "2017-07-21 18:25:23": 21,
+            "2018-03-01 02:50:48": 21,
+            "2017-08-30 14:30:23": 20,
+            "2017-02-03 21:44:49": 15,
+            "2017-12-21 02:30:41": 15
+          },
+          "missing": 0
+        }
+      },
+      "temporal_stats": {
+        "shipping_limit_date": {
+          "start_date": "2016-09-19 00:15:34",
+          "end_date": "2020-04-09 22:35:08",
+          "span_days": 1298,
+          "missing_count": 0
+        }
+      }
+    },
+    "patterns": {
+      "trends": [
+        {
+          "type": "yearly_trend",
+          "column": "shipping_limit_date",
+          "growth_rate": -98.92,
+          "yearly_counts": {
+            "2016": 370,
+            "2017": 49765,
+            "2018": 62511,
+            "2020": 4
+          }
+        }
+      ],
+      "seasonal_patterns": [
+        {
+          "type": "day_of_week_pattern",
+          "column": "shipping_limit_date",
+          "distribution": {
+            "0": 20750,
+            "1": 20079,
+            "2": 20638,
+            "3": 30476,
+            "4": 17487,
+            "5": 461,
+            "6": 2759
+          }
+        }
+      ],
+      "distribution_patterns": [
+        {
+          "column": "order_item_id",
+          "distribution_type": "right_skewed",
+          "skewness": 7.58,
+          "kurtosis": 103.853
+        },
+        {
+          "column": "price",
+          "distribution_type": "right_skewed",
+          "skewness": 7.923,
+          "kurtosis": 120.823
+        },
+        {
+          "column": "freight_value",
+          "distribution_type": "right_skewed",
+          "skewness": 5.64,
+          "kurtosis": 59.786
+        }
+      ],
+      "association_patterns": []
+    },
+    "correlations": {
+      "strong_correlations": [],
+      "moderate_correlations": [
+        {
+          "variable_1": "price",
+          "variable_2": "freight_value",
+          "correlation": 0.414,
+          "strength": "moderate_positive"
+        }
+      ],
+      "correlation_matrix": {
+        "order_item_id": {
+          "order_item_id": 1.0,
+          "price": -0.061,
+          "freight_value": -0.029
+        },
+        "price": {
+          "order_item_id": -0.061,
+          "price": 1.0,
+          "freight_value": 0.414
+        },
+        "freight_value": {
+          "order_item_id": -0.029,
+          "price": 0.414,
+          "freight_value": 1.0
+        }
+      }
+    },
+    "anomalies": {
+      "statistical_outliers": [
+        {
+          "column": "order_item_id",
+          "outlier_count": 13984,
+          "outlier_percentage": 12.41,
+          "lower_bound": 1.0,
+          "upper_bound": 1.0,
+          "min_outlier": 2.0,
+          "max_outlier": 21.0
+        },
+        {
+          "column": "price",
+          "outlier_count": 8427,
+          "outlier_percentage": 7.48,
+          "lower_bound": -102.6,
+          "upper_bound": 277.4,
+          "min_outlier": 277.45,
+          "max_outlier": 6735.0
+        },
+        {
+          "column": "freight_value",
+          "outlier_count": 12134,
+          "outlier_percentage": 10.77,
+          "lower_bound": 0.9750000000000032,
+          "upper_bound": 33.254999999999995,
+          "min_outlier": 0.0,
+          "max_outlier": 409.68
+        }
+      ],
+      "value_anomalies": [
+        {
+          "column": "order_item_id",
+          "extreme_outlier_count": 1894,
+          "sample_values": [
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "column": "price",
+          "extreme_outlier_count": 1966,
+          "sample_values": [
+            810.0,
+            809.1,
+            1050.61
+          ]
+        },
+        {
+          "column": "freight_value",
+          "extreme_outlier_count": 2041,
+          "sample_values": [
+            70.75,
+            85.97,
+            87.28
+          ]
+        }
+      ],
+      "missing_data_patterns": []
+    }
+  },
+  "Order Payments.csv": {
+    "statistical_summary": {
+      "basic_info": {
+        "rows": 103886,
+        "columns": 5,
+        "memory_usage_mb": 17.81
+      },
+      "numeric_stats": {
+        "payment_sequential": {
+          "count": 103886,
+          "missing": 0,
+          "mean": 1.0926785129853878,
+          "median": 1.0,
+          "std": 0.7065837791949956,
+          "min": 1.0,
+          "max": 29.0,
+          "q25": 1.0,
+          "q75": 1.0,
+          "skewness": 16.17983109401154,
+          "kurtosis": 370.575914710595
+        },
+        "payment_installments": {
+          "count": 103886,
+          "missing": 0,
+          "mean": 2.853348863176944,
+          "median": 1.0,
+          "std": 2.6870506738564797,
+          "min": 0.0,
+          "max": 24.0,
+          "q25": 1.0,
+          "q75": 4.0,
+          "skewness": 1.6550498660078428,
+          "kurtosis": 2.5498674428637536
+        },
+        "payment_value": {
+          "count": 103886,
+          "missing": 0,
+          "mean": 154.10038041699553,
+          "median": 100.0,
+          "std": 217.49406386472435,
+          "min": 0.0,
+          "max": 13664.08,
+          "q25": 56.79,
+          "q75": 171.8375,
+          "skewness": 9.25387591018525,
+          "kurtosis": 241.81674519062366
+        }
+      },
+      "categorical_stats": {
+        "order_id": {
+          "unique_count": 99440,
+          "most_common": {
+            "fa65dad1b0e818e3ccc5cb0e39231352": 29,
+            "ccf804e764ed5650cd8759557269dc13": 26,
+            "285c2e15bebd4ac83635ccc563dc71f4": 22,
+            "895ab968e7bb0d5659d16cd74cd1650c": 21,
+            "fedcd9f7ccdc8cba3a18defedd1a5547": 19
+          },
+          "missing": 0
+        },
+        "payment_type": {
+          "unique_count": 5,
+          "most_common": {
+            "credit_card": 76795,
+            "boleto": 19784,
+            "voucher": 5775,
+            "debit_card": 1529,
+            "not_defined": 3
+          },
+          "missing": 0
+        }
+      },
+      "temporal_stats": {}
+    },
+    "patterns": {
+      "trends": [],
+      "seasonal_patterns": [],
+      "distribution_patterns": [
+        {
+          "column": "payment_sequential",
+          "distribution_type": "right_skewed",
+          "skewness": 16.18,
+          "kurtosis": 370.576
+        },
+        {
+          "column": "payment_installments",
+          "distribution_type": "right_skewed",
+          "skewness": 1.655,
+          "kurtosis": 2.55
+        },
+        {
+          "column": "payment_value",
+          "distribution_type": "right_skewed",
+          "skewness": 9.254,
+          "kurtosis": 241.817
+        }
+      ],
+      "association_patterns": []
+    },
+    "correlations": {
+      "strong_correlations": [],
+      "moderate_correlations": [],
+      "correlation_matrix": {
+        "payment_sequential": {
+          "payment_sequential": 1.0,
+          "payment_installments": -0.086,
+          "payment_value": -0.07
+        },
+        "payment_installments": {
+          "payment_sequential": -0.086,
+          "payment_installments": 1.0,
+          "payment_value": 0.331
+        },
+        "payment_value": {
+          "payment_sequential": -0.07,
+          "payment_installments": 0.331,
+          "payment_value": 1.0
+        }
+      }
+    },
+    "anomalies": {
+      "statistical_outliers": [
+        {
+          "column": "payment_sequential",
+          "outlier_count": 4526,
+          "outlier_percentage": 4.36,
+          "lower_bound": 1.0,
+          "upper_bound": 1.0,
+          "min_outlier": 2.0,
+          "max_outlier": 29.0
+        },
+        {
+          "column": "payment_installments",
+          "outlier_count": 6313,
+          "outlier_percentage": 6.08,
+          "lower_bound": -3.5,
+          "upper_bound": 8.5,
+          "min_outlier": 9.0,
+          "max_outlier": 24.0
+        },
+        {
+          "column": "payment_value",
+          "outlier_count": 7981,
+          "outlier_percentage": 7.68,
+          "lower_bound": -115.78125000000003,
+          "upper_bound": 344.40875000000005,
+          "min_outlier": 344.44,
+          "max_outlier": 13664.08
+        }
+      ],
+      "value_anomalies": [
+        {
+          "column": "payment_sequential",
+          "extreme_outlier_count": 906,
+          "sample_values": [
+            4,
+            5,
+            5
+          ]
+        },
+        {
+          "column": "payment_installments",
+          "extreme_outlier_count": 341,
+          "sample_values": [
+            12,
+            13,
+            12
+          ]
+        },
+        {
+          "column": "payment_value",
+          "extreme_outlier_count": 1803,
+          "sample_values": [
+            2027.16,
+            1002.73,
+            1302.42
+          ]
+        }
+      ],
+      "missing_data_patterns": []
+    }
+  },
+  "Orders.csv": {
+    "statistical_summary": {
+      "basic_info": {
+        "rows": 99441,
+        "columns": 8,
+        "memory_usage_mb": 56.88
+      },
+      "numeric_stats": {},
+      "categorical_stats": {
+        "order_id": {
+          "unique_count": 99441,
+          "most_common": {
+            "e481f51cbdc54678b7cc49136f2d6af7": 1,
+            "f01059d0d674e1282df4e8fbbe015aa2": 1,
+            "fbc17f0f2a2125054d5ac5c22d2d5120": 1,
+            "9373150545066777b1cd2bc20e93cf8e": 1,
+            "917399e96f92268dfa2c0351b1b75fba": 1
+          },
+          "missing": 0
+        },
+        "customer_id": {
+          "unique_count": 99441,
+          "most_common": {
+            "9ef432eb6251297304e76186b10a928d": 1,
+            "413f7e58270a32396af030a075b924be": 1,
+            "eb4350b67a0264c67e5e06a038e4afbb": 1,
+            "622b07d262d545d16efbd4363a89cb91": 1,
+            "c701fbfa77791abd05eef9eacf7ea7a8": 1
+          },
+          "missing": 0
+        },
+        "order_status": {
+          "unique_count": 8,
+          "most_common": {
+            "delivered": 96478,
+            "shipped": 1107,
+            "canceled": 625,
+            "unavailable": 609,
+            "invoiced": 314
+          },
+          "missing": 0
+        },
+        "order_purchase_timestamp": {
+          "unique_count": 88789,
+          "most_common": {
+            "8/2/2018 12:06": 28,
+            "8/2/2018 12:05": 26,
+            "8/2/2018 12:07": 22,
+            "11/20/2017 11:46": 20,
+            "11/20/2017 12:47": 13
+          },
+          "missing": 0
+        },
+        "order_approved_at": {
+          "unique_count": 50462,
+          "most_common": {
+            "1/10/2018 10:32": 109,
+            "7/24/2018 10:31": 83,
+            "12/1/2017 11:31": 78,
+            "2/27/2018 4:31": 78,
+            "11/7/2017 7:30": 74
+          },
+          "missing": 160
+        },
+        "order_delivered_carrier_date": {
+          "unique_count": 61544,
+          "most_common": {
+            "5/9/2018 15:48": 47,
+            "5/10/2018 18:29": 32,
+            "4/7/2018 1:16": 24,
+            "5/7/2018 12:31": 21,
+            "2/14/2018 20:15": 16
+          },
+          "missing": 1783
+        },
+        "order_delivered_customer_date": {
+          "unique_count": 75649,
+          "most_common": {
+            "2/1/2018 20:29": 7,
+            "7/24/2018 18:28": 7,
+            "12/11/2017 18:52": 7,
+            "8/3/2018 21:04": 7,
+            "5/21/2018 19:28": 7
+          },
+          "missing": 2965
+        },
+        "order_estimated_delivery_date": {
+          "unique_count": 459,
+          "most_common": {
+            "12/20/2017 0:00": 522,
+            "3/12/2018 0:00": 516,
+            "5/29/2018 0:00": 513,
+            "3/13/2018 0:00": 513,
+            "2/14/2018 0:00": 507
+          },
+          "missing": 0
+        }
+      },
+      "temporal_stats": {
+        "order_delivered_carrier_date": {
+          "start_date": "2016-10-08 10:34:00",
+          "end_date": "2018-09-11 19:48:00",
+          "span_days": 703,
+          "missing_count": 1783
+        },
+        "order_delivered_customer_date": {
+          "start_date": "2016-10-11 13:46:00",
+          "end_date": "2018-10-17 13:22:00",
+          "span_days": 735,
+          "missing_count": 2965
+        },
+        "order_estimated_delivery_date": {
+          "start_date": "2016-09-30 00:00:00",
+          "end_date": "2018-11-12 00:00:00",
+          "span_days": 773,
+          "missing_count": 0
+        }
+      }
+    },
+    "patterns": {
+      "trends": [
+        {
+          "type": "yearly_trend",
+          "column": "order_delivered_carrier_date",
+          "growth_rate": 19134.52,
+          "yearly_counts": {
+            "2016.0": 281,
+            "2017.0": 43328,
+            "2018.0": 54049
+          }
+        },
+        {
+          "type": "yearly_trend",
+          "column": "order_delivered_customer_date",
+          "growth_rate": 20221.32,
+          "yearly_counts": {
+            "2016.0": 272,
+            "2017.0": 40930,
+            "2018.0": 55274
+          }
+        }
+      ],
+      "seasonal_patterns": [
+        {
+          "type": "day_of_week_pattern",
+          "column": "order_delivered_carrier_date",
+          "distribution": {
+            "0.0": 19865,
+            "1.0": 21803,
+            "2.0": 19808,
+            "3.0": 17190,
+            "4.0": 17160,
+            "5.0": 1795,
+            "6.0": 37
+          }
+        },
+        {
+          "type": "day_of_week_pattern",
+          "column": "order_delivered_customer_date",
+          "distribution": {
+            "0.0": 18892,
+            "1.0": 18493,
+            "2.0": 18059,
+            "3.0": 17097,
+            "4.0": 17265,
+            "5.0": 5463,
+            "6.0": 1207
+          }
+        }
+      ],
+      "distribution_patterns": [],
+      "association_patterns": []
+    },
+    "correlations": {
+      "strong_correlations": [],
+      "moderate_correlations": [],
+      "correlation_matrix": {}
+    },
+    "anomalies": {
+      "statistical_outliers": [],
+      "value_anomalies": [],
+      "missing_data_patterns": [
+        {
+          "column": "order_approved_at",
+          "missing_percentage": 0.16,
+          "missing_count": 160
+        },
+        {
+          "column": "order_delivered_carrier_date",
+          "missing_percentage": 1.79,
+          "missing_count": 1783
+        },
+        {
+          "column": "order_delivered_customer_date",
+          "missing_percentage": 2.98,
+          "missing_count": 2965
+        }
+      ]
+    }
+  },
+  "Products.csv": {
+    "statistical_summary": {
+      "basic_info": {
+        "rows": 32951,
+        "columns": 9,
+        "memory_usage_mb": 6.79
+      },
+      "numeric_stats": {
+        "product_name_lenght": {
+          "count": 32341,
+          "missing": 610,
+          "mean": 48.47694876472589,
+          "median": 51.0,
+          "std": 10.245740725237239,
+          "min": 5.0,
+          "max": 76.0,
+          "q25": 42.0,
+          "q75": 57.0,
+          "skewness": -0.9031798661156336,
+          "kurtosis": 0.1923481735604522
+        },
+        "product_description_lenght": {
+          "count": 32341,
+          "missing": 610,
+          "mean": 771.4952846232337,
+          "median": 595.0,
+          "std": 635.1152246349538,
+          "min": 4.0,
+          "max": 3992.0,
+          "q25": 339.0,
+          "q75": 972.0,
+          "skewness": 1.9620017589319778,
+          "kurtosis": 4.82799078344896
+        },
+        "product_photos_qty": {
+          "count": 32341,
+          "missing": 610,
+          "mean": 2.1889861166939797,
+          "median": 1.0,
+          "std": 1.7367656379315446,
+          "min": 1.0,
+          "max": 20.0,
+          "q25": 1.0,
+          "q75": 3.0,
+          "skewness": 2.1933073997320864,
+          "kurtosis": 7.262225802450352
+        },
+        "product_weight_g": {
+          "count": 32949,
+          "missing": 2,
+          "mean": 2276.4724877841513,
+          "median": 700.0,
+          "std": 4282.038730977007,
+          "min": 0.0,
+          "max": 40425.0,
+          "q25": 300.0,
+          "q75": 1900.0,
+          "skewness": 3.6046956693111976,
+          "kurtosis": 15.131086199572081
+        },
+        "product_length_cm": {
+          "count": 32949,
+          "missing": 2,
+          "mean": 30.81507784758263,
+          "median": 25.0,
+          "std": 16.914458054065967,
+          "min": 7.0,
+          "max": 105.0,
+          "q25": 18.0,
+          "q75": 38.0,
+          "skewness": 1.7503800178213578,
+          "kurtosis": 3.512902780626292
+        },
+        "product_height_cm": {
+          "count": 32949,
+          "missing": 2,
+          "mean": 16.937661234028347,
+          "median": 13.0,
+          "std": 13.637554061749494,
+          "min": 2.0,
+          "max": 105.0,
+          "q25": 8.0,
+          "q75": 21.0,
+          "skewness": 2.139963853600904,
+          "kurtosis": 6.677423408507446
+        },
+        "product_width_cm": {
+          "count": 32949,
+          "missing": 2,
+          "mean": 23.196728277034204,
+          "median": 20.0,
+          "std": 12.079047453227835,
+          "min": 6.0,
+          "max": 118.0,
+          "q25": 15.0,
+          "q75": 30.0,
+          "skewness": 1.6708952643831363,
+          "kurtosis": 4.07232575353585
+        }
+      },
+      "categorical_stats": {
+        "product_id": {
+          "unique_count": 32951,
+          "most_common": {
+            "1e9e8ef04dbcff4541ed26657ea517e5": 1,
+            "d05cc9afc85771f597cf4bc9d8f12546": 1,
+            "71b7afd92c42feab780d5ea512fc7348": 1,
+            "5c5f3e091101bea69642eb3dd145b17d": 1,
+            "16d47089f9bc7f16de16cc4bd3b9dd49": 1
+          },
+          "missing": 0
+        },
+        "product_category_name": {
+          "unique_count": 73,
+          "most_common": {
+            "cama_mesa_banho": 3029,
+            "esporte_lazer": 2867,
+            "moveis_decoracao": 2657,
+            "beleza_saude": 2444,
+            "utilidades_domesticas": 2335
+          },
+          "missing": 610
+        }
+      },
+      "temporal_stats": {}
+    },
+    "patterns": {
+      "trends": [],
+      "seasonal_patterns": [],
+      "distribution_patterns": [
+        {
+          "column": "product_name_lenght",
+          "distribution_type": "non_normal",
+          "skewness": -0.903,
+          "kurtosis": 0.192
+        },
+        {
+          "column": "product_description_lenght",
+          "distribution_type": "right_skewed",
+          "skewness": 1.962,
+          "kurtosis": 4.828
+        },
+        {
+          "column": "product_photos_qty",
+          "distribution_type": "right_skewed",
+          "skewness": 2.193,
+          "kurtosis": 7.262
+        },
+        {
+          "column": "product_weight_g",
+          "distribution_type": "right_skewed",
+          "skewness": 3.605,
+          "kurtosis": 15.131
+        },
+        {
+          "column": "product_length_cm",
+          "distribution_type": "right_skewed",
+          "skewness": 1.75,
+          "kurtosis": 3.513
+        }
+      ],
+      "association_patterns": []
+    },
+    "correlations": {
+      "strong_correlations": [],
+      "moderate_correlations": [
+        {
+          "variable_1": "product_weight_g",
+          "variable_2": "product_length_cm",
+          "correlation": 0.477,
+          "strength": "moderate_positive"
+        },
+        {
+          "variable_1": "product_weight_g",
+          "variable_2": "product_height_cm",
+          "correlation": 0.564,
+          "strength": "moderate_positive"
+        },
+        {
+          "variable_1": "product_weight_g",
+          "variable_2": "product_width_cm",
+          "correlation": 0.528,
+          "strength": "moderate_positive"
+        },
+        {
+          "variable_1": "product_length_cm",
+          "variable_2": "product_width_cm",
+          "correlation": 0.542,
+          "strength": "moderate_positive"
+        }
+      ],
+      "correlation_matrix": {
+        "product_name_lenght": {
+          "product_name_lenght": 1.0,
+          "product_description_lenght": 0.099,
+          "product_photos_qty": 0.134,
+          "product_weight_g": 0.045,
+          "product_length_cm": 0.081,
+          "product_height_cm": -0.016,
+          "product_width_cm": 0.071
+        },
+        "product_description_lenght": {
+          "product_name_lenght": 0.099,
+          "product_description_lenght": 1.0,
+          "product_photos_qty": 0.109,
+          "product_weight_g": 0.062,
+          "product_length_cm": 0.035,
+          "product_height_cm": 0.064,
+          "product_width_cm": -0.031
+        },
+        "product_photos_qty": {
+          "product_name_lenght": 0.134,
+          "product_description_lenght": 0.109,
+          "product_photos_qty": 1.0,
+          "product_weight_g": 0.037,
+          "product_length_cm": 0.067,
+          "product_height_cm": 0.004,
+          "product_width_cm": 0.026
+        },
+        "product_weight_g": {
+          "product_name_lenght": 0.045,
+          "product_description_lenght": 0.062,
+          "product_photos_qty": 0.037,
+          "product_weight_g": 1.0,
+          "product_length_cm": 0.477,
+          "product_height_cm": 0.564,
+          "product_width_cm": 0.528
+        },
+        "product_length_cm": {
+          "product_name_lenght": 0.081,
+          "product_description_lenght": 0.035,
+          "product_photos_qty": 0.067,
+          "product_weight_g": 0.477,
+          "product_length_cm": 1.0,
+          "product_height_cm": 0.205,
+          "product_width_cm": 0.542
+        },
+        "product_height_cm": {
+          "product_name_lenght": -0.016,
+          "product_description_lenght": 0.064,
+          "product_photos_qty": 0.004,
+          "product_weight_g": 0.564,
+          "product_length_cm": 0.205,
+          "product_height_cm": 1.0,
+          "product_width_cm": 0.313
+        },
+        "product_width_cm": {
+          "product_name_lenght": 0.071,
+          "product_description_lenght": -0.031,
+          "product_photos_qty": 0.026,
+          "product_weight_g": 0.528,
+          "product_length_cm": 0.542,
+          "product_height_cm": 0.313,
+          "product_width_cm": 1.0
+        }
+      }
+    },
+    "anomalies": {
+      "statistical_outliers": [
+        {
+          "column": "product_name_lenght",
+          "outlier_count": 290,
+          "outlier_percentage": 0.9,
+          "lower_bound": 19.5,
+          "upper_bound": 79.5,
+          "min_outlier": 5.0,
+          "max_outlier": 19.0
+        },
+        {
+          "column": "product_description_lenght",
+          "outlier_count": 2078,
+          "outlier_percentage": 6.43,
+          "lower_bound": -610.5,
+          "upper_bound": 1921.5,
+          "min_outlier": 1922.0,
+          "max_outlier": 3992.0
+        },
+        {
+          "column": "product_photos_qty",
+          "outlier_count": 849,
+          "outlier_percentage": 2.63,
+          "lower_bound": -2.0,
+          "upper_bound": 6.0,
+          "min_outlier": 7.0,
+          "max_outlier": 20.0
+        },
+        {
+          "column": "product_weight_g",
+          "outlier_count": 4551,
+          "outlier_percentage": 13.81,
+          "lower_bound": -2100.0,
+          "upper_bound": 4300.0,
+          "min_outlier": 4315.0,
+          "max_outlier": 40425.0
+        },
+        {
+          "column": "product_length_cm",
+          "outlier_count": 1380,
+          "outlier_percentage": 4.19,
+          "lower_bound": -12.0,
+          "upper_bound": 68.0,
+          "min_outlier": 69.0,
+          "max_outlier": 105.0
+        },
+        {
+          "column": "product_height_cm",
+          "outlier_count": 1892,
+          "outlier_percentage": 5.74,
+          "lower_bound": -11.5,
+          "upper_bound": 40.5,
+          "min_outlier": 41.0,
+          "max_outlier": 105.0
+        },
+        {
+          "column": "product_width_cm",
+          "outlier_count": 912,
+          "outlier_percentage": 2.77,
+          "lower_bound": -7.5,
+          "upper_bound": 52.5,
+          "min_outlier": 53.0,
+          "max_outlier": 118.0
+        }
+      ],
+      "value_anomalies": [
+        {
+          "column": "product_name_lenght",
+          "extreme_outlier_count": 167,
+          "sample_values": [
+            17.0,
+            15.0,
+            16.0
+          ]
+        },
+        {
+          "column": "product_description_lenght",
+          "extreme_outlier_count": 696,
+          "sample_values": [
+            3021.0,
+            3218.0,
+            2913.0
+          ]
+        },
+        {
+          "column": "product_photos_qty",
+          "extreme_outlier_count": 506,
+          "sample_values": [
+            9.0,
+            9.0,
+            9.0
+          ]
+        },
+        {
+          "column": "product_weight_g",
+          "extreme_outlier_count": 961,
+          "sample_values": [
+            18350.0,
+            15350.0,
+            16400.0
+          ]
+        },
+        {
+          "column": "product_length_cm",
+          "extreme_outlier_count": 616,
+          "sample_values": [
+            100.0,
+            87.0,
+            100.0
+          ]
+        },
+        {
+          "column": "product_height_cm",
+          "extreme_outlier_count": 728,
+          "sample_values": [
+            66.0,
+            70.0,
+            60.0
+          ]
+        },
+        {
+          "column": "product_width_cm",
+          "extreme_outlier_count": 574,
+          "sample_values": [
+            79.0,
+            70.0,
+            70.0
+          ]
+        }
+      ],
+      "missing_data_patterns": [
+        {
+          "column": "product_category_name",
+          "missing_percentage": 1.85,
+          "missing_count": 610
+        },
+        {
+          "column": "product_name_lenght",
+          "missing_percentage": 1.85,
+          "missing_count": 610
+        },
+        {
+          "column": "product_description_lenght",
+          "missing_percentage": 1.85,
+          "missing_count": 610
+        },
+        {
+          "column": "product_photos_qty",
+          "missing_percentage": 1.85,
+          "missing_count": 610
+        },
+        {
+          "column": "product_weight_g",
+          "missing_percentage": 0.01,
+          "missing_count": 2
+        },
+        {
+          "column": "product_length_cm",
+          "missing_percentage": 0.01,
+          "missing_count": 2
+        },
+        {
+          "column": "product_height_cm",
+          "missing_percentage": 0.01,
+          "missing_count": 2
+        },
+        {
+          "column": "product_width_cm",
+          "missing_percentage": 0.01,
+          "missing_count": 2
+        }
+      ]
+    }
+  },
+  "Reviews.csv": {
+    "statistical_summary": {
+      "basic_info": {
+        "rows": 99224,
+        "columns": 7,
+        "memory_usage_mb": 42.74
+      },
+      "numeric_stats": {
+        "review_score": {
+          "count": 99224,
+          "missing": 0,
+          "mean": 4.08642062404257,
+          "median": 5.0,
+          "std": 1.3475791311150982,
+          "min": 1.0,
+          "max": 5.0,
+          "q25": 4.0,
+          "q75": 5.0,
+          "skewness": -1.364365080510073,
+          "kurtosis": 0.5075668643881239
+        }
+      },
+      "categorical_stats": {
+        "review_id": {
+          "unique_count": 98410,
+          "most_common": {
+            "7b606b0d57b078384f0b58eac1d41d78": 3,
+            "dbdf1ea31790c8ecfcc6750525661a9b": 3,
+            "32415bbf6e341d5d517080a796f79b5c": 3,
+            "0c76e7a547a531e7bf9f0b99cba071c1": 3,
+            "4219a80ab469e3fc9901437b73da3f75": 3
+          },
+          "missing": 0
+        },
+        "order_id": {
+          "unique_count": 98673,
+          "most_common": {
+            "c88b1d1b157a9999ce368f218a407141": 3,
+            "8e17072ec97ce29f0e1f111e598b0c85": 3,
+            "df56136b8031ecd28e200bb18e6ddb2e": 3,
+            "03c939fd7fd3b38f8485a0f95798f1f6": 3,
+            "5cb890a68b91b6158d69257e4e2bc359": 2
+          },
+          "missing": 0
+        },
+        "review_comment_title": {
+          "unique_count": 4527,
+          "most_common": {
+            "Recomendo": 423,
+            "recomendo": 345,
+            "Bom": 293,
+            "super recomendo": 270,
+            "Excelente": 248
+          },
+          "missing": 87656
+        },
+        "review_comment_message": {
+          "unique_count": 36159,
+          "most_common": {
+            "Muito bom": 230,
+            "Bom": 189,
+            "muito bom": 122,
+            "bom": 107,
+            "Recomendo": 100
+          },
+          "missing": 58247
+        },
+        "review_creation_date": {
+          "unique_count": 636,
+          "most_common": {
+            "2017-12-19 00:00:00": 463,
+            "2018-08-28 00:00:00": 452,
+            "2017-12-20 00:00:00": 440,
+            "2018-05-19 00:00:00": 434,
+            "2018-05-15 00:00:00": 425
+          },
+          "missing": 0
+        },
+        "review_answer_timestamp": {
+          "unique_count": 98248,
+          "most_common": {
+            "2017-06-15 23:21:05": 4,
+            "2018-02-26 15:53:18": 3,
+            "2018-04-07 21:13:05": 3,
+            "2017-02-21 23:30:22": 3,
+            "2017-08-12 14:35:35": 3
+          },
+          "missing": 0
+        }
+      },
+      "temporal_stats": {
+        "review_creation_date": {
+          "start_date": "2016-10-02 00:00:00",
+          "end_date": "2018-08-31 00:00:00",
+          "span_days": 698,
+          "missing_count": 0
+        }
+      }
+    },
+    "patterns": {
+      "trends": [
+        {
+          "type": "yearly_trend",
+          "column": "review_creation_date",
+          "growth_rate": 17181.23,
+          "yearly_counts": {
+            "2016": 325,
+            "2017": 42735,
+            "2018": 56164
+          }
+        }
+      ],
+      "seasonal_patterns": [
+        {
+          "type": "day_of_week_pattern",
+          "column": "review_creation_date",
+          "distribution": {
+            "0": 1093,
+            "1": 18139,
+            "2": 19156,
+            "3": 18825,
+            "4": 17770,
+            "5": 17766,
+            "6": 6475
+          }
+        }
+      ],
+      "distribution_patterns": [
+        {
+          "column": "review_score",
+          "distribution_type": "left_skewed",
+          "skewness": -1.364,
+          "kurtosis": 0.508
+        }
+      ],
+      "association_patterns": []
+    },
+    "correlations": {
+      "strong_correlations": [],
+      "moderate_correlations": [],
+      "correlation_matrix": {}
+    },
+    "anomalies": {
+      "statistical_outliers": [
+        {
+          "column": "review_score",
+          "outlier_count": 14575,
+          "outlier_percentage": 14.69,
+          "lower_bound": 2.5,
+          "upper_bound": 6.5,
+          "min_outlier": 1.0,
+          "max_outlier": 2.0
+        }
+      ],
+      "value_anomalies": [],
+      "missing_data_patterns": [
+        {
+          "column": "review_comment_title",
+          "missing_percentage": 88.34,
+          "missing_count": 87656
+        },
+        {
+          "column": "review_comment_message",
+          "missing_percentage": 58.7,
+          "missing_count": 58247
+        }
+      ]
+    }
+  },
+  "Sellers.csv": {
+    "statistical_summary": {
+      "basic_info": {
+        "rows": 3095,
+        "columns": 4,
+        "memory_usage_mb": 0.66
+      },
+      "numeric_stats": {
+        "seller_zip_code_prefix": {
+          "count": 3095,
+          "missing": 0,
+          "mean": 32291.059450726978,
+          "median": 14940.0,
+          "std": 32713.453829509002,
+          "min": 1001.0,
+          "max": 99730.0,
+          "q25": 7093.5,
+          "q75": 64552.5,
+          "skewness": 0.915647687421791,
+          "kurtosis": -0.8588159703244229
+        }
+      },
+      "categorical_stats": {
+        "seller_id": {
+          "unique_count": 3095,
+          "most_common": {
+            "3442f8959a84dea7ee197c632cb2df15": 1,
+            "e26901d5ab434ce92fd9b5c256820a4e": 1,
+            "7e3f87d16fb353f408d467e74fbd8014": 1,
+            "9140bd1d9de28b197dce077bdd687438": 1,
+            "a2b911e9ad40dc7d61c142a4683e2d85": 1
+          },
+          "missing": 0
+        },
+        "seller_city": {
+          "unique_count": 611,
+          "most_common": {
+            "sao paulo": 694,
+            "curitiba": 127,
+            "rio de janeiro": 96,
+            "belo horizonte": 68,
+            "ribeirao preto": 52
+          },
+          "missing": 0
+        },
+        "seller_state": {
+          "unique_count": 23,
+          "most_common": {
+            "SP": 1849,
+            "PR": 349,
+            "MG": 244,
+            "SC": 190,
+            "RJ": 171
+          },
+          "missing": 0
+        }
+      },
+      "temporal_stats": {}
+    },
+    "patterns": {
+      "trends": [],
+      "seasonal_patterns": [],
+      "distribution_patterns": [
+        {
+          "column": "seller_zip_code_prefix",
+          "distribution_type": "non_normal",
+          "skewness": 0.916,
+          "kurtosis": -0.859
+        }
+      ],
+      "association_patterns": []
+    },
+    "correlations": {
+      "strong_correlations": [],
+      "moderate_correlations": [],
+      "correlation_matrix": {}
+    },
+    "anomalies": {
+      "statistical_outliers": [],
+      "value_anomalies": [],
+      "missing_data_patterns": []
+    }
+  },
+  "_cross_dataset_analysis": {
+    "relationships": [
+      {
+        "datasets": [
+          "Orders.csv",
+          "Order Items.csv"
+        ],
+        "merge_key": "order_id",
+        "merged_records": 112650,
+        "insights": {
+          "average_order_value": 140.64,
+          "total_records_analyzed": 112650
+        }
+      }
+    ],
+    "merged_insights": [
+      {
+        "analysis": "geographic_distribution",
+        "top_states": {
+          "SP": 41746,
+          "RJ": 12852,
+          "MG": 11635,
+          "RS": 5466,
+          "PR": 5045
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "total_visualizations": 13,
+  "charts": [
+    {
+      "name": "Daily Orders Trend",
+      "file": "daily_orders_trend.png",
+      "description": "Time series showing daily order volume over time",
+      "category": "trend_charts"
+    },
+    {
+      "name": "Monthly Orders Distribution",
+      "file": "monthly_orders_distribution.png",
+      "description": "Bar chart showing order distribution by month",
+      "category": "trend_charts"
+    },
+    {
+      "name": "Order Activity Heatmap",
+      "file": "order_activity_heatmap.png",
+      "description": "Heatmap showing order patterns by day and hour",
+      "category": "trend_charts"
+    },
+    {
+      "name": "Product Price Distribution",
+      "file": "price_distribution.png",
+      "description": "Price distribution analysis with histogram and box plot",
+      "category": "distribution_plots"
+    },
+    {
+      "name": "Price vs Freight Value",
+      "file": "price_vs_freight.png",
+      "description": "Scatter plot showing relationship between price and shipping cost",
+      "category": "distribution_plots"
+    },
+    {
+      "name": "Review Score Distribution",
+      "file": "review_score_distribution.png",
+      "description": "Distribution of customer review scores (1-5 stars)",
+      "category": "distribution_plots"
+    },
+    {
+      "name": "Customer State Distribution",
+      "file": "customer_state_distribution.png",
+      "description": "Horizontal bar chart showing top 15 customer states",
+      "category": "geographical_charts"
+    },
+    {
+      "name": "Seller State Distribution",
+      "file": "seller_state_distribution.png",
+      "description": "Horizontal bar chart showing top 15 seller states",
+      "category": "geographical_charts"
+    },
+    {
+      "name": "Payment Type Distribution",
+      "file": "payment_type_distribution.png",
+      "description": "Pie chart showing distribution of payment methods",
+      "category": "payment_charts"
+    },
+    {
+      "name": "Payment Installments Distribution",
+      "file": "payment_installments_distribution.png",
+      "description": "Bar chart showing distribution of installment counts",
+      "category": "payment_charts"
+    },
+    {
+      "name": "Payment Value Distribution",
+      "file": "payment_value_distribution.png",
+      "description": "Payment value distribution with histogram and box plot",
+      "category": "payment_charts"
+    },
+    {
+      "name": "Product Category Distribution",
+      "file": "product_category_distribution.png",
+      "description": "Horizontal bar chart showing top 15 product categories",
+      "category": "product_charts"
+    },
+    {
+      "name": "Product Weight Distribution",
+      "file": "product_weight_distribution.png",
+      "description": "Histogram showing product weight distribution",
+      "category": "product_charts"
+    }
+  ]
+}
